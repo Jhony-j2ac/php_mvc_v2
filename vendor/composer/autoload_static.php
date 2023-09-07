@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit8b4457e16514e7a13bbcadf337771b01
 {
     public static $files = array (
+        '6e60481d8c04e99474e2ba7b3658ab5a' => __DIR__ . '/..' . '/php-activerecord/php-activerecord/ActiveRecord.php',
         '233a8c142e2911db44625529eb58362d' => __DIR__ . '/../..' . '/src/Common/Utility.php',
     );
 
@@ -18,22 +19,17 @@ class ComposerStaticInit8b4457e16514e7a13bbcadf337771b01
         'A' => 
         array (
             'App\\' => 4,
-            'ActiveRecord\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Models\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/models',
+            0 => __DIR__ . '/../..' . '/src/models/orm',
         ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-        ),
-        'ActiveRecord\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/Common/php-activerecord/lib',
         ),
     );
 

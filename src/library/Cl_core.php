@@ -16,7 +16,7 @@ class Cl_core {
     
     public function __construct(){
         $url = $this->Mt_getUrl();
-
+	self::ArConfig();
 	/* 1)
 	 * Se valida y se carga el controlador segun la url
 	 * */	
@@ -60,5 +60,22 @@ class Cl_core {
             return $url;
         }
     }
+
+    private static function ArConfig(){
+                $uu     = DB_USER;
+                $pp     = DB_PASS;
+                $hh     = DB_HOST;
+                $dd     = DB_DB;
+                $dsn_ar = "mysql://$uu:$pp@$hh/$dd;charset=utf8";
+                $cfg    = \ActiveRecord\Config::instance();
+                $cfg->set_model_directory(RUTA_APP.'/models/orm');
+                $cfg->set_connections(array(
+                        'development' => $dsn_ar,
+                        'execute' => 'SET lc_time_names = "es_ES"'
+		));
+
+		#var_dump(\Models\TestAr::find('all'));
+		#var_dump(\App\models\orm\CategoriasAr::find('all'));
+        }
     
 }

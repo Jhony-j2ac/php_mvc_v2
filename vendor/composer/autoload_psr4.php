@@ -6,7 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Models\\' => array($baseDir . '/src/models'),
+    'Models\\' => array($baseDir . '/src/models/orm'),
     'App\\' => array($baseDir . '/src'),
-    'ActiveRecord\\' => array($baseDir . '/src/Common/php-activerecord/lib'),
 );

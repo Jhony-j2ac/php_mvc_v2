@@ -1,9 +1,9 @@
 <?php
 
-define("DB_HOST", "localhost");
+define("DB_HOST", "localhost:3306");
 define("DB_USER", "root");
-define("DB_PASS", "1234");
-define("DB_DB", "telefonia");
+define("DB_PASS", "Mysql1234.");
+define("DB_DB", "aperec");
 
 
 define('RUTA_APP', dirname(dirname(__FILE__)));

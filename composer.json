@@ -3,8 +3,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "Models\\": "src/models/",
-            "ActiveRecord\\": "src/Common/php-activerecord/lib/"
+            "Models\\": "src/models/orm"
         },
         "files": [
             "src/Common/Utility.php"
@@ -15,5 +14,6 @@
         "platform": { "php": "8.1.2" }
     },
     "require": {
+        "php-activerecord/php-activerecord": "^1.2"
     }
 }
